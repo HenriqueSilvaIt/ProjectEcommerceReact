@@ -64,7 +64,7 @@ nav {
      um debaixo do outro na vertical ai teria que inverter o eixo*/
 }
 
-.container { /*imporante o container ficar no nav(barra de navegação, para que centralize só o conteúdo
+.dsc-container { /*imporante o container ficar no nav(barra de navegação, para que centralize só o conteúdo
     se ficar no header a cordo cabelaçho não pega 100% da largura, queremos centralizar só o conteúdo*/
     width: 100%; /*para cobrir toda largura da  tela, no caso tela pequena */
     max-width: 960px; /* deixando 960px de largura máxima se for tela grande  para o conteúdo */
@@ -72,7 +72,7 @@ nav {
 
 }
 
-.card { /*classe tem que ter um ponto */
+.dsc-card { /*classe tem que ter um ponto */
     background-color:  var(--color-card-bg);
     border-radius: 4px;
     border: 1px solid var(--color-card-border);/*borda do card do produto*/
@@ -80,12 +80,12 @@ nav {
 }
 
 
-.line-bottom {
+.dsc-line-bottom {
     border-bottom: 1px solid var(--color-card-border);
 
 }
 
-.mb20 { /* vai ser um estilo
+.dsc-mb20 { /* vai ser um estilo
     que vamos usar quando  quiser
     colocar uma margin abaixo em alguma classe*, 
     para  n deixar o card atrelado a ess margin
@@ -96,7 +96,7 @@ nav {
     margin-bottom: 20px;
 }
 
-.btn-page-container { /* botões abaixo do card dos produto */
+.dsc-btn-page-container { /* botões abaixo do card dos produto */
     width: 220px;
     display: grid; /*grade é para criar um
     espaço entre conteúdo na vertical */
@@ -104,7 +104,7 @@ nav {
 
 }
 
-.btn { /* botões configuração gerais*/
+.dsc-btn { /* botões configuração gerais*/
     border-radius: 4px;
     height: 42px;
     font-size: 16px;
@@ -117,12 +117,12 @@ nav {
 
 /*botões configurações especificas */
 
-.btn-blue {
+.dsc-btn-blue {
     background-color: var(--color-btn-primary);
     color: var(--color-btn-inverse);
 }
 
-.btn-white {
+.dsc-btn-white {
     background-color: var(--color-btn-inverse);
     color: var(--color-btn-primary);
     border: 1px solid var(--color-btn-primary);

@@ -3,41 +3,41 @@ colcoar o :root denovo com as cores
 porque estamos importando o arquivo css
 que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pinta*/
 
-#product-details {
+#product-details-section {
     padding: 20px 0; /* espaço 20 px em cima e embaixo e na horizontal 0 
     padding é o verdinho no inspecionar*/
 }
 
-.product-details-top {
+.dsc-product-details-top {
     padding: 10px;
     display: flex;
     justify-content: center; /* alinha no centro na horizontal*/
 }
 
 
-.product-details-top img{
+.dsc-product-details-top img{
     width: 220px;
     display: flex;
 }
 
-.product-details-bottom { /*card da descrição do produto */
+.dsc-product-details-bottom { /*card da descrição do produto */
     padding: 10px 20px 20px 20px; /* 10 no topo enos demais lados 20 px */
     
 
 }
 
-.product-details-bottom h3{ /*preço do produto */
+.dsc-product-details-bottom h3{ /*preço do produto */
     color: var(--color-font-secondary);
     font-size: 20px;
     /*todo h ja vem negrito então n precisa colocar */
 }
 
-.product-details-bottom h4 { 
+.dsc-product-details-bottom h4 { 
     color: var(--color-font-primary);
     font-size: 12px;
 }
 
-.product-details-bottom p {
+.dsc-product-details-bottom p {
     color: var(--color-font-primary);
     font-size: 12px;
     margin: 10px 0; /* 10px na vertical
@@ -45,7 +45,7 @@ que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pin
 
 }
 
-.category {
+.dsc-category {
     background-color:var(--color-bg-tertiary);
     border-radius: 4px;
     height: 30px;
@@ -62,7 +62,7 @@ que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pin
     margin-right: 20px;
 }
 
-.category-container {
+.dsc-category-container {
     display: flex;
 }
 
