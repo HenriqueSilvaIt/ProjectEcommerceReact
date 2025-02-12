@@ -1,11 +1,20 @@
 :root { /* root é o admin  html*/
-    --color-yellow: #FFE500;
-    --color-light-grey: #E8E8E8;
-    --color-white: #fff;
-    --color-grey: #D9D9D9;
-    --color-green: #0CAF1D;
-    --color-dark-grey: #636363;
-    --color-blue: #3483FA;
+
+    --color-bg-primary: #E8E8E8;
+    --color-bg-secondary: #FFE500;
+    --color-bg-tertiary: #636363;
+
+    --color-card-bg: #fff;
+    --color-card-border: #D9D9D9;
+
+    /* se amanhã precisar mudar o fundo só dos botôes só mudar por aqui
+    por isso que repetimos as cores */
+    --color-btn-primary: #3483FA;
+    --color-btn-inverse: #fff;
+
+    --color-font-primary: #636363;
+    --color-font-secondary: #0CAF1D;
+    --color-font-tertiary: #Fff;
 }
 
 * {
@@ -24,14 +33,14 @@ a, a:hover { /* hover é quando passa o mouse em cima do link*/
     
 html, body {
   
-    background-color: var(--color-light-grey); /* deixando o plano de fundo cinza */
+    background-color: var(--color-bg-primary); /* deixando o plano de fundo cinza */
 }
 
 
 /*Cabeçalho */
 header {
     height: 70px;
-    background-color: var(--color-yellow);
+    background-color: var(--color-bg-secondary);
     display: flex;
     align-items: center; /*alinha com o display flex o conteúdo no centro na vertical */
 }
@@ -45,6 +54,7 @@ nav {
     conteúdo no centro, ai
      criamos um container para centralizar
      o conteúdo na tela */
+     color: var(--color-font-primary);
      display: flex;
      justify-content: space-between; /* separando
      um contéudo do outro igual no rodapé */
@@ -63,15 +73,15 @@ nav {
 }
 
 .card { /*classe tem que ter um ponto */
-    background-color:  var(--color-white);
+    background-color:  var(--color-card-bg);
     border-radius: 4px;
-    border: 1px solid var(--color-grey);/*borda do card do produto*/
+    border: 1px solid var(--color-card-border);/*borda do card do produto*/
 
 }
 
 
 .line-bottom {
-    border-bottom: 1px solid var(--color-grey);
+    border-bottom: 1px solid var(--color-card-border);
 
 }
 
@@ -108,12 +118,12 @@ nav {
 /*botões configurações especificas */
 
 .btn-blue {
-    background-color: var(--color-blue);
-    color: var(--color-white);
+    background-color: var(--color-btn-primary);
+    color: var(--color-btn-inverse);
 }
 
 .btn-white {
-    background-color: var(--color-white);
-    color: var(--color-blue);
-    border: 1px solid var(--color-blue);
+    background-color: var(--color-btn-inverse);
+    color: var(--color-btn-primary);
+    border: 1px solid var(--color-btn-primary);
 }
