@@ -35,7 +35,30 @@ html, body {
   
     background-color: var(--color-bg-primary); /* deixando o plano de fundo cinza */
 }
+/*****************************************************************************/
+/*generic style */
 
+.dsc-container { /*imporante o container ficar no nav(barra de navegação, para que centralize só o conteúdo
+    se ficar no header a cordo cabelaçho não pega 100% da largura, queremos centralizar só o conteúdo*/
+    width: 100%; /*para cobrir toda largura da  tela, no caso tela pequena */
+    max-width: 960px; /* deixando 960px de largura máxima se for tela grande  para o conteúdo */
+    margin: 0 auto; /* essa margin espaço externo que centraliza o conteúdo n omeio da página */
+
+}
+
+
+.dsc-mb20 { /* vai ser um estilo
+    que vamos usar quando  quiser
+    colocar uma margin abaixo em alguma classe*, 
+    para  n deixar o card atrelado a ess margin
+     vai que em outra página eu queira usar o mesmo
+     card só que sem margin, então
+     poir isso é bom ter uma classe específica
+     para margn e quando quiser aplica ela  no elemento*/
+    margin-bottom: 20px;
+}
+
+/************************************************************************************************/
 
 /*Cabeçalho */
 header {
@@ -45,6 +68,14 @@ header {
     align-items: center; /*alinha com o display flex o conteúdo no centro na vertical */
 }
 
+nav a {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+nav h1 {
+    font-size: 24px;
+}
 
 /* Barra de navegação */
 nav { 
@@ -64,13 +95,8 @@ nav {
      um debaixo do outro na vertical ai teria que inverter o eixo*/
 }
 
-.dsc-container { /*imporante o container ficar no nav(barra de navegação, para que centralize só o conteúdo
-    se ficar no header a cordo cabelaçho não pega 100% da largura, queremos centralizar só o conteúdo*/
-    width: 100%; /*para cobrir toda largura da  tela, no caso tela pequena */
-    max-width: 960px; /* deixando 960px de largura máxima se for tela grande  para o conteúdo */
-    margin: 0 auto; /* essa margin espaço externo que centraliza o conteúdo n omeio da página */
-
-}
+/*************************************************************************************/
+/*card-style*/
 
 .dsc-card { /*classe tem que ter um ponto */
     background-color:  var(--color-card-bg);
@@ -79,21 +105,12 @@ nav {
 
 }
 
+/*************************************************************************************/
+/*button-style*/
 
 .dsc-line-bottom {
     border-bottom: 1px solid var(--color-card-border);
 
-}
-
-.dsc-mb20 { /* vai ser um estilo
-    que vamos usar quando  quiser
-    colocar uma margin abaixo em alguma classe*, 
-    para  n deixar o card atrelado a ess margin
-     vai que em outra página eu queira usar o mesmo
-     card só que sem margin, então
-     poir isso é bom ter uma classe específica
-     para margn e quando quiser aplica ela  no elemento*/
-    margin-bottom: 20px;
 }
 
 .dsc-btn-page-container { /* botões abaixo do card dos produto */

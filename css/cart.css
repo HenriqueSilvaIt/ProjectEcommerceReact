@@ -16,9 +16,6 @@ que tem ar cores */
     color: var(--color-font-secondary);
 }
 
-
-
-
 .dsc-cart-item-container {
     padding: 0 20px;
     display: flex;
