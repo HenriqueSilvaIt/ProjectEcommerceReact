@@ -62,6 +62,17 @@ main { /*reseponsividade */
     margin-bottom: 20px;
 }
 
+
+.dsc-mt20 { /* vai ser um estilo
+    que vamos usar quando  quiser
+    colocar uma margin abaixo em alguma classe*, 
+    para  n deixar o card atrelado a ess margin
+     vai que em outra página eu queira usar o mesmo
+     card só que sem margin, então
+     poir isso é bom ter uma classe específica
+     para margn e quando quiser aplica ela  no elemento*/
+    margin-top: 20px;
+}
 /************************************************************************************************/
 
 /*Cabeçalho */
@@ -161,4 +172,18 @@ utilizamos o min-width semp */
     background-color: var(--color-btn-inverse);
     color: var(--color-btn-primary);
     border: 1px solid var(--color-btn-primary);
+}
+
+.dsc-btn-next-page {
+    border: 1px solid var(--color-btn-primary);
+    padding: 10px;
+
+    border-radius: 4px;
+    color: var(--color-btn-primary);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer; /*mao*/
+
+
 }

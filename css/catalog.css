@@ -1,0 +1,8 @@
+@import url("style.css"); /* não precisa
+colcoar o :root denovo com as cores
+porque estamos importando o arquivo css
+que tem ar cores */
+
+#catalog-section{
+    padding: 20px 0;
+}
