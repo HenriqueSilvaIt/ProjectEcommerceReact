@@ -21,7 +21,7 @@ que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pin
 }
 
 .dsc-product-details-bottom { /*card da descrição do produto */
-    padding: 10px 20px 20px 20px; /* 10 no topo enos demais lados 20 px */
+    padding: 10px 20px; /* 10 no topo enos demais lados 20 px */
     
 
 }
@@ -48,6 +48,7 @@ que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pin
 .dsc-category {
     background-color:var(--color-bg-tertiary);
     border-radius: 4px;
+    margin-bottom: 10px;
     height: 30px;
     font-size: 12px;
     font-weight: bold;
@@ -64,6 +65,8 @@ que tem ar cores, quando é outro arquivo o puglin do Vstudio a extenção n pin
 
 .dsc-category-container {
     display: flex;
+    flex-wrap: wrap; /*quebra a linha
+    quando estoura a largura */
 }
 
 

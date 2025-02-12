@@ -35,6 +35,10 @@ html, body {
   
     background-color: var(--color-bg-primary); /* deixando o plano de fundo cinza */
 }
+
+main { /*reseponsividade */
+    padding: 0 20px;
+}
 /*****************************************************************************/
 /*generic style */
 
@@ -66,6 +70,7 @@ header {
     background-color: var(--color-bg-secondary);
     display: flex;
     align-items: center; /*alinha com o display flex o conteúdo no centro na vertical */
+    padding: 0 20px;
 }
 
 nav a {
@@ -114,11 +119,24 @@ nav {
 }
 
 .dsc-btn-page-container { /* botões abaixo do card dos produto */
-    width: 220px;
+    width: 100%;
     display: grid; /*grade é para criar um
     espaço entre conteúdo na vertical */
     grid-gap: 20px; /* tamanho do espaço entre os conteúdo do grif na vertical */
 
+}
+
+/* media query para responsividade */
+/* abordagem mobile fisrt (Resolver
+primeiro o first para essa
+utilizamos o min-width semp */
+@media (min-width: 576px) {
+    /* a partir dessa largura acima
+    da página a largura do botão
+    vai ser essa abaixo */
+    .dsc-btn-page-container { 
+        width: 220px;
+    }
 }
 
 .dsc-btn { /* botões configuração gerais*/
