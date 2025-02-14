@@ -92,6 +92,13 @@ nav a {
     font-weight: 700;
 }
 
+.dsc-logged-user {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
 nav h1 {
     font-size: 24px;
     color: var(--color-font-primary);

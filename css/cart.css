@@ -46,6 +46,7 @@ que tem ar cores */
     
 }
 
+
 .dsc-cart-item-right {
     padding-bottom: 10px;
     font-size: 12px;
@@ -64,6 +65,8 @@ que tem ar cores */
 
 .dsc-cart-item-quantity-container {
     font-size: 16px;
+    font-weight: 700;
+    color: var(--color-font-primary);
 }
 
 .dsc-cart-item-quantity-btn{

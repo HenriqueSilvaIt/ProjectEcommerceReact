@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/cart.css" />
+  <link rel="stylesheet" href="css/confirmation.css" />
+    <!-- se tem o import do css específico no arquvio css n precisa importa
+    o gneérico  no html <link rel="stylesheet" href="css/style.css" />  -->
+  </head>
+  <body>
+    <header>
+      <nav class="dsc-container">
+        <!-- Barra de navegação-->
+        <h1>E-commerce</h1>
+        <div class="dsc-logged-user">
+          <p>Maria Silv</p>
+          <a href="#">Sair</a>
+        </div>
+       
+      </nav>
+    </header>
+    <main>
+      <section id="confirmantion-section" class="dsc-container">
+        <div class="dsc-card dsc-mb20">
+          <div class="dsc-cart-item-container dsc-line-bottom">
+            <div class="dsc-cart-item-left">
+              <img src="./css/img/compute.png" alt="computer" />
+              <div class="dsc-cart-item-description">
+                <h3>Computador Gamer XT</h3>
+                <div class="dsc-cart-item-quantity-container">
+                  <p>1</p>
+                </div>
+              </div>
+            </div>
+            <div class="dsc-cart-item-right">R$ 5000,00</div>
+          </div>
+
+          <div class="dsc-cart-item-container dsc-line-bottom">
+            <div class="dsc-cart-item-left">
+              <img src="./css/img/compute.png" alt="computer" />
+              <div class="dsc-cart-item-description">
+                <h3>Computador Gamer XT</h3>
+                <div class="dsc-cart-item-quantity-container">
+                  <p>1</p>
+                </div>
+              </div>
+            </div>
+            <div class="dsc-cart-item-right">R$ 5000,00</div>
+          </div>
+          <div class="dsc-cart-total-container">
+            <h3>R$ 1500,00</h3>
+          </div>
+        </div>
+        <div class="dsc-confirmation-message dsc-mb20">
+          Pedido realizado! Número 35
+        </div>
+        <div class="dsc-btn-page-container">
+          <!-- botões que estão abaixo do card do produto-->
+          <div class="dsc-btn dsc-btn-white">
+            <!-- botão inicio-->
+            Início
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- js é colocado sempre antes de fechar o body aqui no final
+     porque o html carrega em parelolo com a formatação e design-->
+  </body>
+</html>
