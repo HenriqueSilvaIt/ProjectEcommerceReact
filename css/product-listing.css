@@ -1,0 +1,22 @@
+@import url("style.css"); /* não precisa
+colcoar o :root denovo com as cores
+porque estamos importando o arquivo css
+que tem ar cores */
+
+#product-listing-section {
+    padding: 20px 0;
+}
+
+
+.dsc-product-listing-image { /* imagem do computador da tabela*/
+    width: 69px;
+    height: 69 px;
+}
+
+.dsc-product-listing-btn { /*formatação
+    das imagens dos botões da tabela (editar e excluir*/
+    height: 20px;
+    width: auto;
+    cursor: pointer;
+    margin: 5px; /*espaçamento entre os botões */
+}

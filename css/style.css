@@ -76,6 +76,20 @@ main { /*reseponsividade */
      para margn e quando quiser aplica ela  no elemento*/
     margin-top: 20px;
 }
+
+.dsc-section-title { /*pode ser
+    utilizado como título a esquerda  no corpo  de qualquer
+    página */
+    text-align: center;
+    color: var(--color-font-primary);
+    font-size: 16px;
+
+}
+
+.dsc-text-left{
+    text-align: left;
+}
+
 /************************************************************************************************/
 
 /*Cabeçalho */
@@ -341,8 +355,57 @@ utilizamos o min-width semp */
     caixa de texto */
 }
 
+
 @media (min-width: 576px) {
     .dsc-form h2 {
         font-size: 24px;
     }
+}
+
+/*************************************************************************************/
+/*table-style*/
+
+.dsc-table {
+    width: 100%;
+    border-spacing: 0; /*retira
+    o espaçamento entre as bordas
+    da tabela */
+    border-collapse: collapse; /*
+    para n ter problema de colocar alguma
+    linha entre uma linha e a linha debaixo
+     e ocorrer de ela n aparecer */
+}
+
+
+.dsc-table thead { /*formtação nome das colunas da tablea */
+    background-color: var(---color-card-bg);
+    height: 55px;
+    font-size: 14px;
+    /* por padrão o th que é o nome
+    da coluna da tabela, já tem negrito
+     então não precisa colocar */
+    color: var(--color-font-primary);
+}
+
+
+.dsc-table tbody { /*formtação do corpo da tabela*/
+    text-align: center;
+    font-size: 12px;
+    background-color: var(---color-card-bg);
+    color: var(--color-font-primary);
+  
+}
+
+
+.dsc-table tbody tr { /* formatando
+    a linha que tiver dentro do corpo da tabela */
+    border-top: 1px solid var(--color-card-border); 
+    /* colocando borda na parte do topo
+    da linha que contém os valores */
+    height: 70px; /* aqui estamos
+    colocando a altura da linha
+    como na imagem também já tem a altura
+    da linha n precisava, mas por boa
+    medida estamos colocando aqui */
+
 }
