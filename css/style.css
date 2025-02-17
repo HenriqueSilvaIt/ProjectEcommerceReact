@@ -127,7 +127,7 @@ nav a {
 }
 
 nav h1 {
-    font-size: 24px;
+    font-size: 16px;
     color: var(--color-font-primary);
 }
 
@@ -147,6 +147,32 @@ nav {
      porque estamos alinhando ao centro na vertical, conteúdos que
      estão na horizontal, agora se eu tivesse vários conteúdos
      um debaixo do outro na vertical ai teria que inverter o eixo*/
+}
+
+.dsc-nav-bar-right {
+    display: flex;
+    align-items: center;
+}
+
+.dsc-menu-itens-container {
+    display: flex;
+}
+
+.dsc-menu-itens-container img {
+    width: 20px;
+    height: 20px;
+}
+
+.dsc-menu-item {
+    margin-right: 20px; /*colocando um espaçamento entre os icones do menu */
+}
+
+@media (min-width: 576px) {
+
+    nav h1 {
+        font-size: 24px;
+    }
+
 }
 
 /*************************************************************************************/
