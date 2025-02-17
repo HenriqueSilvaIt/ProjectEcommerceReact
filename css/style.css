@@ -3,6 +3,7 @@
     --color-bg-primary: #E8E8E8;
     --color-bg-secondary: #FFE500;
     --color-bg-tertiary: #636363;
+    --color-bg-quartenary: #0CAF1D;
 
     --color-card-bg: #fff;
     --color-card-border: #D9D9D9;
@@ -114,6 +115,17 @@ header {
     padding: 0 20px;
 }
 
+.dsc-header-client {
+    background-color: var(--color-bg-secondary);
+    color: var(--color-font-primary);
+}
+
+.dsc-header-admin {
+    background-color: var(--color-bg-quartenary);
+    color: var(--color-font-tertiary);
+}
+
+
 nav a {
     font-size: 14px;
     font-weight: 700;
@@ -128,7 +140,6 @@ nav a {
 
 nav h1 {
     font-size: 16px;
-    color: var(--color-font-primary);
 }
 
 /* Barra de navegação */
@@ -139,7 +150,6 @@ nav {
     conteúdo no centro, ai
      criamos um container para centralizar
      o conteúdo na tela */
-     color: var(--color-font-primary);
      display: flex;
      justify-content: space-between; /* separando
      um contéudo do outro igual no rodapé */
@@ -163,14 +173,33 @@ nav {
     height: 20px;
 }
 
+.dsc-menu-item p {
+    margin-left: 5px;
+    display: none; /* para n aparecer na tela mobile */
+    font-size: 14px;
+}
+
+
+.dsc-menu-item-active { /* classe para ficar em negrito o item de menu
+     no qual o usuário estiver acessando */
+    font-weight: bold;
+
+}
 .dsc-menu-item {
     margin-right: 20px; /*colocando um espaçamento entre os icones do menu */
+    display: flex;
+    align-items: center;
 }
 
 @media (min-width: 576px) {
 
     nav h1 {
         font-size: 24px;
+    }
+
+    .dsc-menu-item p {
+        display: unset; /* para começar aparecer os textos
+        dos itens de menu produto e inicio */
     }
 
 }
