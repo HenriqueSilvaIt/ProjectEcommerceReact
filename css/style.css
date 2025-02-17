@@ -96,7 +96,7 @@ nav a {
     font-size: 12px;
     display: flex;
     flex-direction: column;
-    
+
 }
 
 nav h1 {
@@ -300,7 +300,7 @@ utilizamos o min-width semp */
     na caix de text*/
 }
 
-.dsc-form-control ::placeholder {
+.dsc-form-control::placeholder {
     color: var(--color-font-placeholder); /*cor da fonte
     do place holder*/
 }
@@ -315,6 +315,32 @@ utilizamos o min-width semp */
     padding-left: 4px;
 
 }
+
+.dsc-select:invalid { /* invalid
+     é para dizer enquanto no for
+     clicacado fica com essa formatação */
+    color: var(--color-font-placeholder);
+}
+
+.dsc-select option[disabled] {
+    display: none; /* quando clicar na listinha de categoria
+    a categoria para de aparecer na lista de opções por
+    causa do disabled*/
+}
+
+.des-select-option {
+    color: var(--color-font-primary);
+}
+
+.dsc-textarea {
+    resize: none; /*retira a opção
+    de redimencionar o tamanho da caixinha com o mouse*/
+    height: 128px;
+    padding-top: 10px; /* para
+    quando digitar ficar com espaço na
+    caixa de texto */
+}
+
 @media (min-width: 576px) {
     .dsc-form h2 {
         font-size: 24px;
