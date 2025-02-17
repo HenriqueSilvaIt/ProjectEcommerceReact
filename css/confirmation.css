@@ -20,6 +20,6 @@ que tem ar cores */
 @media (min-width: 576px) {
     .dsc-confirmation-message{
         font-size: 24px;
-        text-align: center;
+        text-align: left;
     }
 }

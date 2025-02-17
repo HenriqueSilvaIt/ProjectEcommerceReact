@@ -11,45 +11,39 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
-  <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/admin-home.css" />
     <!-- se tem o import do css específico no arquvio css n precisa importa
-    o gneérico  no html <link rel="stylesheet" href="css/style.css" />  -->
+    no html <link rel="stylesheet" href="css/style.css" /> -->
   </head>
   <body>
-    <header  class="dsc-header-client">
+    <header class="dsc-header-admin">
       <nav class="dsc-container">
         <!-- Barra de navegação-->
-        <h1>E-commerce</h1>
+        <h1>E-commerce Admin</h1>
         <div class="dsc-nav-bar-right"> 
           <div class="dsc-menu-itens-container"> <!-- container dos itens de menu-->
+          <div class="dsc-menu-item"> <!-- item de menu-->
+            <img src="css/img/home.svg" alt="home">
+            <p>Início</p>
+          </div>
           <div class="dsc-menu-item">
-            <img src="css/img/cart.svg" alt="car">
+            <img src="css/img/products.svg" alt="cadastro de produtos">
+            <p class="dsc-menu-item-active">Produtos</p>
           </div>
         </div>
-        <a href="#">Entrar</a>
+        <div class="dsc-logged-user">
+          <p>Maria Gonsalve</p>
+          <a href="#">Sair</a>
+        </div>
       </div>
       </nav>
     </header>
     <main>
-      <section id="login-section" class="dsc-container">
+      <section id="admin-home-section" class="dsc-container">
+        <h2 class="dsc-section-title dsc-mb20">Bem vindo à area administrativa</h2>
         <div class="dsc-login-form-container"> 
-          <form class="dsc-card dsc-form">
-            <h2>Login</h2>
-            <div class="dsc-form-controls-container">
-              <div>
-              <input class="dsc-form-control dsc-input-error" type="text" placeholder="Email">
-              <div class="dsc-form-error">Campo obrigatório</div>
-            </div> 
-            <div>
-              <input class="dsc-form-control" type="password" placeholder="Senha">
-            </div>
-            </div>      
-
-            <div class="dsc-login-form-buttons dsc-mt20">
-              <button type="submit" class="dsc-btn dsc-btn-blue">Entrar</button>
-            </div>
-          </form>
+          
+          <img class="dsc-card-home"src="css/img/cart.svg" alt="hom">
         </div>
       </section>
     </main>
