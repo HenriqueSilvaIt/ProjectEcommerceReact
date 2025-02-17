@@ -11,6 +11,8 @@ que tem ar cores */
 .dsc-product-listing-image { /* imagem do computador da tabela*/
     width: 69px;
     height: 69 px;
+    display: block; /* desconta
+    espaço  da imagem do interno e n do externo */
 }
 
 .dsc-product-listing-btn { /*formatação

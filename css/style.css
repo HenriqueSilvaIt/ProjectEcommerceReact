@@ -86,8 +86,21 @@ main { /*reseponsividade */
 
 }
 
+/* ajustando texto do título para ir para direita e ficar maior
+no 576 */
+@media (min-width: 576px) {
+    .dsc-section-title {
+        text-align: left;
+        font-size: 24px;
+        }
+}
+
 .dsc-text-left{
     text-align: left;
+    /* por padrão
+     o td  é a alinhado ao centro
+
+     e o tr é a linhado a equerda */
 }
 
 /************************************************************************************************/
@@ -378,7 +391,7 @@ utilizamos o min-width semp */
 
 
 .dsc-table thead { /*formtação nome das colunas da tablea */
-    background-color: var(---color-card-bg);
+    background-color: var(--color-card-bg);
     height: 55px;
     font-size: 14px;
     /* por padrão o th que é o nome
@@ -391,7 +404,7 @@ utilizamos o min-width semp */
 .dsc-table tbody { /*formtação do corpo da tabela*/
     text-align: center;
     font-size: 12px;
-    background-color: var(---color-card-bg);
+    background-color: var(--color-card-bg);
     color: var(--color-font-primary);
   
 }
@@ -408,4 +421,90 @@ utilizamos o min-width semp */
     da linha n precisava, mas por boa
     medida estamos colocando aqui */
 
+}
+
+
+/* no mobile a primeira coluna aparecer é a coluna do computador
+ por isso no mobile nós arredondamos a coluna 2 que é a coluna do computador
+ porque ela vai ser a prieira coluna no mobile no 576 nós mudamos o arredondamento para coluna 1 que é 
+ a coluna id */
+.dsc-table th:nth-child(2) { /* pegando
+    os valores da segunda coluna o nth-child() voCê
+     coloca qual posição da coluna você quer formatar */
+    border-top-left-radius: 10px; /*
+    arredondamento  esquerda em cima e embaixo */
+}
+
+.dsc-table th:last-child { /* pegando
+    os valores da segunda coluna o nth-child() voCê
+     coloca qual posição da coluna você quer formatar */
+    border-top-right-radius: 10px; /*
+    arredondamento  a direita em cima e embaixo */
+}
+
+
+.dsc-table td:nth-child(2) { /* pegando
+    os valores da segunda coluna o nth-child() voCê
+     coloca qual posição da coluna você quer formatar */
+    padding-left: 10px;
+}
+
+.dsc-table td:last-child { /* last child
+     é parecido com o nth-child, porém o last child
+     pega a última coluna da tablea */
+     padding-right: 5px;
+
+}
+
+.dsc-tb576 { /* 576 é uma tela do bootstrap 
+breakpoints */
+    display: none; /* estilo utilizado
+    para quem estiver abaixo de 576px */
+}
+
+
+.dsc-tb768 { /* 768 é uma tela do bootstrap 
+    breakpoints */
+        display: none; /* estilo utilizado
+        para quem estiver abaixo de 576px */
+    }
+    
+
+@media (min-width: 576px) {
+    .dsc-tb576 {
+        display: table-cell; /*
+        a partir do 576 vai ser mostrado */
+    }
+
+    .dsc-table td:nth-child(1){
+        padding-left: 20px;
+    }
+
+    .dsc-table th:nth-child(1){
+        padding-left: 20px;
+        border-top-left-radius: 10px;
+    }
+    .dsc-table td:nth-child(2) { /* pegando
+    os valores da segunda coluna o nth-child() voCê
+     coloca qual posição da coluna você quer formatar */
+    padding-left: 0px;
+}
+  
+
+}
+
+
+
+@media (min-width: 768px) {
+    .dsc-tb768 {
+        display: table-cell;
+        /*
+        a partir do 768 vai ser mostrado */
+    }
+}
+
+@Media (min-width: 992px) {
+    .dsc-table tbody {
+        font-size: 16px;
+    }
 }
